@@ -26,7 +26,7 @@ for (var x=0; x<difficultyMajor; x++) {
 pattern += difficultyMinor.toString(16);
 var patternLen = pattern.length; // == difficultyMajor+1
 
-if      (difficultyMinor == 0) { maximumNonce *= 16; } // 0000 require 4 more 0 bits
+if      (difficultyMinor == 0) { maximumNonce *= 16; } //
 else if (difficultyMinor == 1) { maximumNonce *= 8;  } // 0001 require 3 more 0 bits
 else if (difficultyMinor <= 3) { maximumNonce *= 4;  } // 0011 require 2 more 0 bits
 else if (difficultyMinor <= 7) { maximumNonce *= 2;  } // 0111 require 1 more 0 bit
